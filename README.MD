@@ -17,7 +17,7 @@ Terraform Module for provisioning all infrastructure needed for zimbra training 
 ```hcl
 # main.tf
 module "zimbra-training" {
-  source = "github.com/inova-tecnologias/zimbra_training_iac"
+  source = "github.com/inova-tecnologias/zimbra-training-iac"
 
   customer_name = "MyCustomer"
   participants = 10
@@ -49,7 +49,7 @@ terraform output -json | jq .ssh_key.value --raw-output
 ```hcl
 # main.tf
 module "zimbra-training" {
-  source = "github.com/inova-tecnologias/zimbra_training_iac"
+  source = "github.com/inova-tecnologias/zimbra-training-iac"
 
   customer_name = "MyCustomer"
   participants = 10
